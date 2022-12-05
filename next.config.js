@@ -24,6 +24,6 @@ module.exports = withPWA({
 
   skipWaiting: true,
 
-  // disable: process.env.NODE_ENV === "production",
+  disable: process.env.NODE_ENV === "production",
 
 })
