@@ -3,8 +3,8 @@ sudo mkdir -p /home/ubuntu/app
 sudo curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-IS_ACTIVE=$(sudo systemctl is-active myApp)
-if [ "$IS_ACTIVE" == "active" ]; then
+IS_ACT=$(sudo systemctl is-active myApp)
+if [ "$IS_ACT" == "active" ]; then
     # restart the service
     echo "Service is running"
     echo "Restarting service"
